@@ -3,7 +3,7 @@ FROM gradle:7.4.2-jdk8 AS build
 
 WORKDIR /usr/app/
 
-# Copy Hydra project files
+# Copy Styx project files
 COPY . .
 
 RUN gradle shadowJar

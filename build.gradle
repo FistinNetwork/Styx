@@ -33,6 +33,8 @@ shadowJar {
 }
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.4'
     implementation 'jline:jline:2.14.6'
 }
 
